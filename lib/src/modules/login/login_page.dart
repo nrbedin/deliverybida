@@ -51,19 +51,19 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
   }
 
   @override
-  void _formSubmit() {
-    final formValid = formKey.currentState?.validate() ?? false;
-    if (formValid) {
-      controller.login(emailEC.text, passwordEC.text);
-    }
-  }
-
-  @override
   void dispose() {
     emailEC.dispose();
     passwordEC.dispose();
     statusReactionDisposer();
     super.dispose();
+  }
+
+  @override
+  void _formSubmit() {
+    final formValid = formKey.currentState?.validate() ?? false;
+    if (formValid) {
+      controller.login(emailEC.text, passwordEC.text);
+    }
   }
 
   @override
@@ -117,7 +117,7 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
                       children: [
                         FractionallySizedBox(
                           widthFactor: .3,
-                          child: Image.asset('assets/images/logo11.png'),
+                          child: Image.asset('assets/images/logoNovoPreto.png'),
                         ),
                         const SizedBox(
                           height: 20,

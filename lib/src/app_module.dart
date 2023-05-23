@@ -5,6 +5,7 @@ import 'package:flutter_modular/flutter_modular.dart';
 import 'package:deliverydigital/src/modules/core/core_module.dart';
 import 'package:deliverydigital/src/modules/login/login_module.dart';
 import 'package:deliverydigital/src/modules/payment_type/payment_type_module.dart';
+import 'package:deliverydigital/src/modules/products/home/products_module.dart';
 import 'package:deliverydigital/src/modules/template/base_layout.dart';
 
 import './modules/home/home_page.dart';
@@ -23,12 +24,16 @@ class AppModule extends Module {
           child: (context, args) => const BaseLayout(
             body: RouterOutlet(),
           ),
+          transition: TransitionType.noTransition,
           children: [
-            // ChildRoute('/home', child: ((context, args) => const HomePage()))
             ModuleRoute(
               '/payment-types',
               module: PaymentTypeModule(),
-            )
+            ),
+            ModuleRoute(
+              '/products',
+              module: ProductsModule(),
+            ),
           ],
         ),
       ];

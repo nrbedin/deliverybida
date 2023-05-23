@@ -20,7 +20,7 @@ class BaseLayout extends StatelessWidget {
         child: Stack(
           children: [
             Container(
-              color: Colors.black,
+              color: Colors.grey[850],
               constraints: BoxConstraints(
                 minWidth: screenWidth,
                 minHeight: shortestSide * .15,
@@ -31,20 +31,20 @@ class BaseLayout extends StatelessWidget {
                 width: shortestSide * .13,
                 margin: const EdgeInsets.only(left: 60),
                 child: Image.asset(
-                  fit: BoxFit.scaleDown,
-                  'assets/images/logo11.png',
+                  fit: BoxFit.cover,
+                  'assets/images/logogrey850.png',
                 ),
               ),
             ),
             Positioned.fill(
               top: shortestSide * .13,
               child: Container(
-                decoration: const BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.horizontal(
-                    left: Radius.circular(20),
-                    right: Radius.circular(20),
-                  ),
+                decoration: BoxDecoration(
+                  color: Colors.grey[800], //alterei
+                  //borderRadius: const BorderRadius.horizontal(
+                  //  left: Radius.circular(20),
+                  //  right: Radius.circular(20),
+                  //),
                 ),
                 child: Row(
                   children: [

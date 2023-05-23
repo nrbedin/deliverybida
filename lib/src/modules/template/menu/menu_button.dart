@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'package:deliverydigital/src/core/ui/styles/colors_app.dart';
 import 'package:deliverydigital/src/core/ui/styles/text_styles.dart';
 import 'package:deliverydigital/src/modules/template/menu/menu_enum.dart';
 
@@ -26,7 +27,7 @@ class MenuButton extends StatelessWidget {
           decoration: isSelected
               ? BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0XFFFFF5E2),
+                  color: Colors.grey[600],
                 )
               : null,
           child: Tooltip(
@@ -50,7 +51,7 @@ class MenuButton extends StatelessWidget {
               decoration: isSelected
                   ? BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
-                      color: Color(0XFFFFF5E2),
+                      color: Colors.grey[600],
                     )
                   : null,
               child: Row(
@@ -71,7 +72,9 @@ class MenuButton extends StatelessWidget {
                       overflow: TextOverflow.ellipsis,
                       style: isSelected
                           ? context.textStyles.textBold
-                          : context.textStyles.textRegular,
+                              .copyWith(color: context.colors.secondary)
+                          : context.textStyles.textRegular
+                              .copyWith(color: context.colors.secondary),
                     ),
                   ),
                 ],

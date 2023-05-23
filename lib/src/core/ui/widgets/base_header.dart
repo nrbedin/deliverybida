@@ -54,7 +54,9 @@ class BaseHeader extends StatelessWidget {
               title,
               textAlign: TextAlign.center,
               style: context.textStyles.textTitle.copyWith(
-                  decoration: TextDecoration.underline, decorationThickness: 2),
+                decoration: TextDecoration.underline,
+                decorationThickness: 2,
+              ),
             ),
           ),
           Visibility(
