@@ -1,5 +1,6 @@
 import 'package:flutter_modular/flutter_modular.dart';
 
+import 'package:deliverydigital/src/modules/products/home/detail/product_detail_controller.dart';
 import 'package:deliverydigital/src/modules/products/home/detail/product_detail_page.dart';
 import 'package:deliverydigital/src/modules/products/home/products_controller.dart';
 import 'package:deliverydigital/src/modules/products/home/products_page.dart';
@@ -13,6 +14,11 @@ class ProductsModule extends Module {
             i(),
           ),
         ),
+        Bind.lazySingleton(
+          (i) => ProductDetailController(
+            i(),
+          ),
+        ),
       ];
 
   @override
@@ -20,8 +26,8 @@ class ProductsModule extends Module {
         ChildRoute('/', child: (context, args) => const ProductsPage()),
         ChildRoute(
           '/detail',
-          child: (context, args) => const ProductDetailPage(
-            productId: null,
+          child: (context, args) => ProductDetailPage(
+            productId: int.tryParse(args.queryParams['id'] ?? 'não informado'),
           ),
         ),
       ];

@@ -74,23 +74,24 @@ class _PaymenteTypePageState extends State<PaymenteTypePage>
 
   void showAddOrUpdatePayment() {
     showDialog(
-        context: context,
-        builder: (context) {
-          return Material(
-            color: Colors.black26,
-            child: Dialog(
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(10),
-              ),
-              backgroundColor: Colors.white,
-              elevation: 10,
-              child: PaymentTypeFormModal(
-                model: controller.paymentTypeSelected,
-                controller: controller,
-              ),
+      context: context,
+      builder: (context) {
+        return Material(
+          color: Colors.black26,
+          child: Dialog(
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10),
             ),
-          );
-        });
+            backgroundColor: Colors.white,
+            elevation: 10,
+            child: PaymentTypeFormModal(
+              model: controller.paymentTypeSelected,
+              controller: controller,
+            ),
+          ),
+        );
+      },
+    );
   }
 
   @override

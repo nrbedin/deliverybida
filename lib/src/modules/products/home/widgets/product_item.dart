@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'package:flutter_modular/flutter_modular.dart';
+
 import 'package:deliverydigital/src/core/env/env.dart';
 import 'package:deliverydigital/src/core/extensions/formatter_extensions.dart';
 import 'package:deliverydigital/src/core/ui/styles/text_styles.dart';
 import 'package:deliverydigital/src/models/product_model.dart';
+import 'package:deliverydigital/src/modules/products/home/products_controller.dart';
 
 class ProductItem extends StatelessWidget {
   final ProductModel product;
@@ -57,7 +60,9 @@ class ProductItem extends StatelessWidget {
                   ),
                 ),
                 TextButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    context.read<ProductsController>().editProduct(product);
+                  },
                   child: Text(
                     'Editar',
                   ),
