@@ -12,7 +12,11 @@ import 'package:deliverydigital/src/core/ui/styles/text_styles.dart';
 import 'package:deliverydigital/src/modules/login/login_controller.dart';
 
 class LoginPage extends StatefulWidget {
-  LoginPage({super.key});
+  final String? name;
+  LoginPage({
+    super.key,
+    this.name,
+  });
 
   @override
   State<LoginPage> createState() => _LoginPageState();
@@ -125,7 +129,7 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
                         FittedBox(
                           fit: BoxFit.scaleDown,
                           child: Text(
-                            'Login',
+                            'Login :${widget.name}',
                             style: context.textStyles.textTitle,
                           ),
                         ),

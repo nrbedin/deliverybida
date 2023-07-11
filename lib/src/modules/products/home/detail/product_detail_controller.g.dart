@@ -107,6 +107,15 @@ mixin _$ProductDetailController on ProductDetailControllerBase, Store {
     return _$loadProductsAsyncAction.run(() => super.loadProducts(id));
   }
 
+  late final _$deleteProductAsyncAction = AsyncAction(
+      'ProductDetailControllerBase.deleteProduct',
+      context: context);
+
+  @override
+  Future<void> deleteProduct() {
+    return _$deleteProductAsyncAction.run(() => super.deleteProduct());
+  }
+
   @override
   String toString() {
     return '''

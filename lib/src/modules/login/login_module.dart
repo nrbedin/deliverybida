@@ -17,6 +17,11 @@ class LoginModule extends Module {
 
   @override
   List<ModularRoute> get routes => [
-        ChildRoute('/', child: (context, args) => LoginPage()),
+        ChildRoute('/:name',
+            child: (context, args) => LoginPage(
+                  name: args.params != null
+                      ? args.params['name'].toString()
+                      : null,
+                )),
       ];
 }
