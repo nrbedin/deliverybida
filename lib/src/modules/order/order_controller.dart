@@ -48,11 +48,11 @@ abstract class OrderControllerBase with Store {
       _orders = await _orderRepository.findAllOrders(_today, _statusFilter);
       _status = OrderStateStatus.loaded;
     } catch (e, s) {
-      log('Erro ao buscar pedidos do diaaaaaa', error: e, stackTrace: s);
+      log('Erro ao buscar pedidos do dia', error: e, stackTrace: s);
       print(e);
       print(s);
       _status = OrderStateStatus.error;
-      _errorMessage = 'Erro ao buscar pedidos do diaaaaaaa';
+      _errorMessage = 'Erro ao buscar pedidos do dia';
     }
   }
 

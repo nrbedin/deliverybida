@@ -13,7 +13,7 @@ import 'package:deliverydigital/src/modules/login/login_controller.dart';
 
 class LoginPage extends StatefulWidget {
   final String? name;
-  LoginPage({
+  const LoginPage({
     super.key,
     this.name,
   });
@@ -121,7 +121,7 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
                       children: [
                         FractionallySizedBox(
                           widthFactor: .3,
-                          child: Image.asset('assets/images/logoNovoPreto.png'),
+                          child: Image.asset('assets/images/fundo.png'),
                         ),
                         const SizedBox(
                           height: 20,
@@ -139,7 +139,8 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
                         TextFormField(
                           controller: emailEC,
                           onFieldSubmitted: (_) => _formSubmit(),
-                          decoration: InputDecoration(labelText: 'E-mail'),
+                          decoration:
+                              const InputDecoration(labelText: 'E-mail'),
                           validator: Validatorless.multiple([
                             Validatorless.required('E-mail Obrigatório'),
                             Validatorless.email('E-mail inválido'),
@@ -152,7 +153,7 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
                           controller: passwordEC,
                           obscureText: true,
                           onFieldSubmitted: (_) => _formSubmit(),
-                          decoration: InputDecoration(labelText: 'Senha'),
+                          decoration: const InputDecoration(labelText: 'Senha'),
                           validator:
                               Validatorless.required('Senha Obrigatória'),
                         ),
@@ -164,7 +165,7 @@ class _LoginPageState extends State<LoginPage> with Loader, Messages {
                           height: 50,
                           child: ElevatedButton(
                             onPressed: _formSubmit,
-                            child: Text(
+                            child: const Text(
                               'Entrar',
                             ),
                           ),

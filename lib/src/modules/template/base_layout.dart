@@ -32,7 +32,7 @@ class BaseLayout extends StatelessWidget {
                 margin: const EdgeInsets.only(left: 60),
                 child: Image.asset(
                   fit: BoxFit.cover,
-                  'assets/images/logogrey850.png',
+                  'assets/images/fundo.png',
                 ),
               ),
             ),
