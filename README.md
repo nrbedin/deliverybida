@@ -23,7 +23,7 @@ As seguintes ferramentas foram usadas na construção deste projeto:
 
 
 ## :briefcase: Experiências
-O desenvolvimento do Delivery Bida envolveu a criação de um sistema robusto e eficiente, capaz de gerenciar pedidos de delivery de maneira integrada e prática. Utilizando o poder do Flutter e pacotes modernos como Modular e MobX, o sistema garante uma performance e experiência de usuário de alto nível.
+O desenvolvimento do Delivery Bida envolveu a criação de um sistema, capaz de gerenciar pedidos de delivery de maneira integrada e prática. Utilizando o poder do Flutter e pacotes modernos como Modular e MobX, o sistema garante uma performance e experiência de usuário de alto nível.
 
 
 ## :mailbox_with_mail: Contato
