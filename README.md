@@ -1,16 +1,36 @@
-# deliverydigital
+# Delivery Bida
 
-A new Flutter project.
+## :dart: Sobre
+Delivery Bida é um sistema de backoffice desenvolvido em Flutter WEB, utilizando arquitetura MVC com Design Pattern Repository e Service, e os pacotes Modular e MobX. Inicialmente criado na versão do Flutter 2.10.5 e atualizado para a versão 3.22.1.
 
-## Getting Started
+Flutter version: 3.22.1
 
-This project is a starting point for a Flutter application.
+## :sparkles: Funcionalidades
+- :heavy_check_mark: Gestão completa de pedidos de delivery;
 
-A few resources to get you started if this is your first Flutter project:
+- :heavy_check_mark: Rastreio e monitoramento de pedidos em tempo real;
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- :heavy_check_mark: Interface intuitiva e responsiva para uma experiência otimizada.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## :rocket: Tecnologias
+As seguintes ferramentas foram usadas na construção deste projeto:
+
+- [Flutter 3.22.1](https://docs.flutter.dev/)
+
+- Modular
+
+- MobX
+
+
+## :briefcase: Experiências
+O desenvolvimento do Delivery Bida envolveu a criação de um sistema robusto e eficiente, capaz de gerenciar pedidos de delivery de maneira integrada e prática. Utilizando o poder do Flutter e pacotes modernos como Modular e MobX, o sistema garante uma performance e experiência de usuário de alto nível.
+
+
+## :mailbox_with_mail: Contato
+Desenvolvido por Naiara Rafaela Bedin. Para saber mais sobre mim ou sobre meus projetos, entre em contato através dos links abaixo:
+
+GitHub: https://github.com/nrbedin
+
+LinkedIn: https://www.linkedin.com/in/naiara-bedin/
+
+Email: nrbedin@gmail.com
