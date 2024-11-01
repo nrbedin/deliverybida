@@ -66,7 +66,7 @@ class OrderBottomBarButton extends StatelessWidget {
             side: BorderSide(
               color: buttonColor,
             ),
-            primary: buttonColor,
+            //primary: buttonColor,
           ),
           onPressed: () {},
           child: Row(

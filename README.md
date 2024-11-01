@@ -5,6 +5,13 @@ Delivery Bida é um sistema de backoffice desenvolvido em Flutter WEB, utilizand
 
 Flutter version: 3.22.1
 
+## :dart: Observação
+Este projeto possui duas branches principais:
+
+- main: Integrado com backend, gerenciado por controllers.
+
+- feat/refactor-controller: Contém dados fictícios para testes e desenvolvimento.
+
 ## :sparkles: Funcionalidades
 - :heavy_check_mark: Gestão completa de pedidos de delivery;
 
